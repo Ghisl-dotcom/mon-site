@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événement - Accueil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <h1>Osez Entreprendre!!</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="ES.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="programme.html">Programme</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="intervenants.html">Intervenants</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="billetterie.html">Billetterie</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="text-center">
+            <h2>Rejoignez-nous pour un événement exceptionnel !</h2>
+            <p>Découvrez des opportunités uniques, rencontrez des experts et développez votre réseau..</p>
+            <table class="table table-bordered table-striped mt-4">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Date</th>
+                        <th>Lieu</th>
+                        <th>Tarif</th>
+                        <th>Horaire</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 - 17 Juin</td>
+                        <td>Palais des Sports</td>
+                        <td>10 000 Ar</td>
+                        <td>9h - 18h</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="salon.jpg" class="img-fluid mt-3" alt="Événement">
+            <a href="billetterie.html" class="btn btn-primary mt-3">Réserver</a>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Osez Entreprendre |
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram.png" alt="Instagram" width="30">
+            </a>
+    </footer>
+    <script>
+        const ctx = document.getElementById('participationChart').getContext('2d');
+        const participationChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jour 1', 'Jour 2', 'Jour 3'],
+                datasets: [{
+                    label: 'Participants attendus',
+                    data: [500, 700, 900],
+                    backgroundColor: ['rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)', 'rgba(75, 192, 192, 0.5)'],
+                    borderColor: ['rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Index.jS"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Index.jS"></script>
+</body>
+</html>
+
+    
